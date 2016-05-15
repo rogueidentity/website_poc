@@ -74,13 +74,12 @@ jQuery(document).foundation();
       submitHandler: function(form) {
         $.ajax({
           type: 'POST',
-          url: 'send.php',
+          url: 'https://formspree.io/info@rogueidentity.com',
           data: $(form).serialize(),
+	  dataType: 'json',
           success: function(data) {
-            if(data.match(/success/)) {
-              $(form).trigger('reset');
-              $('#thanks').show().fadeOut(5000);
-            }
+          	$(form).trigger('reset');
+		$('#thanks').show().fadeOut(5000);
           }
         });
         return false;

@@ -1,9 +1,9 @@
 - name: Home
   path: index.html
   section_id: home
-- name: About
-  path: about.html
-  section_id: about
+  #- name: About
+  #path: about.html
+  #section_id: about
   #- name: Services
   #path: services.html
   #section_id: services
