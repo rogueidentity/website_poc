@@ -402,7 +402,7 @@ jQuery(document).foundation();
         options.autoStop = false;
       }
 
-      // console.log(options);
+      //console.log(options);
 
       var sequence = $(".sequence", $ctx).sequence(options).data("sequence");
       sequence.beforeCurrentFrameAnimatesOut = function() {
@@ -455,7 +455,7 @@ jQuery(document).foundation();
       var options = {
         nextButton: true,
         prevButton: true,
-        autoPlay: false,
+        autoPlay: true,
         autoStop: true,
         autoPlayDelay: 3000,
         pauseButton: true,
