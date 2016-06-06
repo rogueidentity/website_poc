@@ -1951,7 +1951,7 @@ body.screenshot {
   font-size: 5.14286rem;
   line-height: 5.14286rem;
   display: inline-block;
-  color: #fff;
+/*  color: #fff; */
   letter-spacing: 2px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -1960,7 +1960,7 @@ body.screenshot {
 .modDefaultSlider .sequence .small-title h2 {
   font-size: 1.28571rem;
   font-weight: normal;
-  color: #fff;
+/*  color: #fff; */
   letter-spacing: 2px;
   margin-bottom: 5px;
 }

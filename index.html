@@ -2,28 +2,33 @@
 layout: default
 section_id: home
 slides:
-  - bg: images/iphone.jpg
+  - bg: images/laptop.jpeg
     title:
       text: Rogue Identity
       animation: bottom-to-top
       class: large-8 medium-11
-  - bg: images/clouds.jpg
-    buttons:
-      animation: bottom-to-top slow
-      class: large-12
-      items:
-        - text: Contact Us
-          url: /contact.html
-          class: boxed
     infos:
-      - text: "&nbsp;Full-Stack Development"
-        animation: bottom-to-top
-      - text: "&nbsp;Identity Subject Matter Expertise"
-        animation: bottom-to-top
-      - text: "&nbsp;Security Assessments"
-        animation: bottom-to-top
+      - text: "&nbsp;Bespoke and Personal Development"
+        animation: bottom-to-top slow
       - text: "&nbsp;Project Management"
         animation: bottom-to-top
+#  - bg: images/clouds.jpg
+#    buttons:
+#      animation: bottom-to-top slow
+#      class: large-12
+#      items:
+#        - text: Contact Us
+#          url: /contact.html
+#          class: boxed
+#    infos:
+#      - text: "&nbsp;Full-Stack Development"
+#        animation: bottom-to-top
+#      - text: "&nbsp;Identity Subject Matter Expertise"
+#        animation: bottom-to-top
+#      - text: "&nbsp;Security Assessments"
+#        animation: bottom-to-top
+#      - text: "&nbsp;Project Management"
+#        animation: bottom-to-top
 boxes:
   - icon_class: fa fa-trophy
     title: Design
@@ -82,12 +87,14 @@ clients:
 
 <div class='advanced mod modDefaultSlider'>
   <div class='sequence' data-autostop='off' data-timeout='10000'>
+	  <!--
     <a class='sequence-prev' href='javascript:void(0);'>
       <span></span>
     </a>
     <a class='sequence-next' href='javascript:void(0);'>
       <span></span>
     </a>
+	  -->
     <ul class='sequence-pagination'>
       {% for slide in page.slides %}
         {% if forloop.index == 1 %}
@@ -107,6 +114,13 @@ clients:
 
         <li class='frame {{class}}'>
           <div class='bg' style='background-image: url({{slide.bg}});'></div>
+            <div class='title {{slide.title.animation}}' style='color: rgb(0, 0, 0);'>
+              <div class='row'>
+                <div class='{{slide.title.class}} columns'>
+                  <h2>{{slide.title.text}}</h2>
+                </div>
+              </div>
+            </div>
           {% if slide.infos %}
             {% for info in slide.infos %}
               <div class='info{{forloop.index}} {{info.animation}}' style=''>
@@ -118,14 +132,6 @@ clients:
                 </div>
               </div>
             {% endfor %}
-          {% else %}
-            <div class='title {{slide.title.animation}}' style='color: rgb(255, 255, 255);'>
-              <div class='row'>
-                <div class='{{slide.title.class}} columns'>
-                  <h2>{{slide.title.text}}</h2>
-                </div>
-              </div>
-            </div>
           {% endif %}
           <div class='buttons-wrapper {{slide.buttons.animation}}' style=''>
             <div class='row'>
