@@ -864,7 +864,7 @@ body.screenshot {
   color: #333;
 }
 .modBlogPost h4 a:hover {
-  color: #f9ce06;
+  color: #5C0C0C;
 }
 .modBlogPost .date {
   font-size: 0.78571rem;
@@ -919,7 +919,7 @@ body.screenshot {
   color: #333;
 }
 .modBlogPost.big h3 a:hover {
-  color: #f9ce06;
+  color: #5C0C0C;
 }
 .modBlogPost.big h4 {
   font-size: 1.7rem;
