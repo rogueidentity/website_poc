@@ -13,6 +13,11 @@
   white-space: pre;       // forces <code> to respect <pre> formatting
 }
 
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  color: #333333;
+}
 
 /*
  * GitHub style for Pygments syntax highlighter, for use with Jekyll

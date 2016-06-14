@@ -13,6 +13,10 @@
   font-weight: bold;
 }
 
+.content {
+  color: #5D6769;
+}
+
 /*some basic settings */
 a {
   color: #5C0C0C;
