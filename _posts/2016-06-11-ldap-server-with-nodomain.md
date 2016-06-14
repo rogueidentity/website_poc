@@ -2,7 +2,7 @@
 layout:     post
 title:     "New LDAP server getting 'nodomain' as suffix"
 subtitle:     "Solving the mystery of the inconsistent rootDN"
-categories:   "ldap"
+categories:   "identity"
 date:       2016-06-11
 author:     "Topher"
 ---

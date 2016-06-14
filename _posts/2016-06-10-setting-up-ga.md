@@ -2,7 +2,7 @@
 layout:     post
 title:     "Setting up Google Analytics"
 subtitle:     "For the complete beginner"
-categories:   "google analytics"
+categories:   "martech google_analytics"
 date:       2016-06-10
 author:     "Topher"
 ---
