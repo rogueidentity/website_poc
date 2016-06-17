@@ -3,7 +3,7 @@ layout:     post
 title:     "Code Fencing with Foundation"
 subtitle:     ""
 categories:   ""
-date:       2016-06-10
+date:       2016-06-14
 author:     "Topher"
 ---
 This website is generated using [Jekyll](https://jekyllrb.com/) with a theme that utilizes [Foundation](http://foundation.zurb.com/) for styling. I like Foundation as a framework, but its styling for code blocks isn't really what I want for a code-heavy site.
