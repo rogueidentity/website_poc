@@ -25,7 +25,7 @@ I configured the subject line of the email, and set it to run daily. Also, I cho
 </div>
 
 Success, a Google Analytics report email sent straight to my inbox.
-
+<br/>
 <div class="row">
 	<div class="small-8 large-8 columns">
 		<img src="{{site.url}}/images/ga/goal_report_email.png"/>

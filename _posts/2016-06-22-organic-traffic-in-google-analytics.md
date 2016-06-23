@@ -13,7 +13,7 @@ I've mentioned that this site is just starting, right? Because the following is 
 	</div>
 </div>
 <br/>
-Yeah, one visitor. That visitor actually did go to the contact page -- which is how I set up my goal -- but I misconfigured the goal so it didn't register as a 'conversion.' At least the filter is working, and I didn't see any traffic from my home IP.
+Yeah, one visitor. That visitor actually did go to the contact page -- which is [how I set up my goal]({% post_url 2016-06-17-view-filter-ga %}) -- but I misconfigured the goal so it didn't register as a 'conversion.' At least the [filter]({% post_url 2016-06-17-view-filter-ga %}) is working, and I didn't see any traffic from my home IP.
 
 Again, I can't feel too bad yet. This site is linked to by exactly two places. My [LinkedIn](https://www.linkedin.com/in/tophermarie) and [Twitter](https://twitter.com/topher_marie) accounts.
 
