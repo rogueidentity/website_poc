@@ -1,0 +1,16 @@
+- title: Pages
+  links:
+    - name: Home
+      link: http://rogueidentity.com/
+    - name: Solutions
+      link: /portfolio/
+    - name: About
+      link: /about/
+    - name: Contact
+      link: /contact/
+- title: Social
+  links:
+    - name: LinkedIn
+      link: https://www.linkedin.com/in/tophermarie/
+      social_icon: LinkedIn
+      new_window: true

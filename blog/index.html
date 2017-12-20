@@ -1,22 +1,32 @@
 ---
-layout: blog
-section_id: blog
+layout: page
+title: Blog
+heading: Blog
+subtitle: Keep up with the latest news.
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-  <a href="{{ post.url | prepend: site.baseurl }}">
-    <h2 class="post-title">            {{ post.title }}</h2>
-    {% if post.subtitle %}
-      <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-    {% endif %}
-  </a>
-  <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+<section class="diagonal">
+	<div class="text-container">
+	    <p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a></p>
+		<ul class="blog-posts">
+			{% include list-posts.html posts=paginator.posts %}
+		</ul>
+	</div>
+</section>
 
-{% include pagination.html root="blog" %}
+{% if paginator.total_pages > 1 %}
+	<section class="diagonal alternate">
+		<!-- Pagination links -->
+		<div class="pagination">
+			{% if paginator.previous_page %}
+				<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer posts</a>
+			{% endif %}
 
+			<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-<div class='four spacing'></div>
+			{% if paginator.next_page %}
+				<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn">Older posts &rarr;</a>
+			{% endif %}
+		</div>
+	</section>
+{% endif %}

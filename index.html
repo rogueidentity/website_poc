@@ -1,168 +1,43 @@
 ---
-layout: default
-section_id: home
-slides:
-  - bg: images/laptop.jpeg
-    title:
-      text: Rogue Identity
-      animation: bottom-to-top
-      class: large-8 medium-11
-    infos:
-      - text: "&nbsp;Full-stack Development"
-        animation: bottom-to-top slow
-      - text: "&nbsp;Project Management"
-        animation: bottom-to-top
-    buttons:
-      animation: bottom-to-top slow
-      class: large-12
-      items:
-        - text: Free consultation
-          url: /contact.html
-          class: boxed
-#  - bg: images/clouds.jpg
-#    buttons:
-#      animation: bottom-to-top slow
-#      class: large-12
-#      items:
-#        - text: Contact Us
-#          url: /contact.html
-#          class: boxed
-#    infos:
-#      - text: "&nbsp;Full-Stack Development"
-#        animation: bottom-to-top
-#      - text: "&nbsp;Identity Subject Matter Expertise"
-#        animation: bottom-to-top
-#      - text: "&nbsp;Security Assessments"
-#        animation: bottom-to-top
-#      - text: "&nbsp;Project Management"
-#        animation: bottom-to-top
-boxes:
-  - icon_class: fa fa-trophy
-    title: Design
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-compass
-    title: Art direction
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-star-half-empty
-    title: Branding
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-image
-    title: Photography
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-dot-circle-o
-    title: Marketing
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-milestones:
-  - from: 0
-    to: 69
-    title: Projects Completed
-  - from: 0
-    to: 726
-    title: Cups of coffee offered
-  - from: 0
-    to: 59
-    title: Happy clients
-  - from: 0
-    to: 21
-    title: Articles Published
-
-testimonials:
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-  - text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing."
-    author: David White
-    position: Designer at Huglab
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-
-clients:
-  - images/@stock/client-1.png
-  - images/@stock/client-2.png
-  - images/@stock/client-3.png
-  - images/@stock/client-4.png
-  - images/@stock/client-5.png
-  - images/@stock/client-6.png
-
+title: Rogue Identity
 ---
 
-<div class='advanced mod modDefaultSlider'>
-  <div class='sequence' data-autostop='off' data-timeout='10000'>
-	  <!--
-    <a class='sequence-prev' href='javascript:void(0);'>
-      <span></span>
-    </a>
-    <a class='sequence-next' href='javascript:void(0);'>
-      <span></span>
-    </a>
-	  -->
-    <ul class='sequence-pagination'>
-      {% for slide in page.slides %}
-        {% if forloop.index == 1 %}
-          <li class='current'></li>
-        {% else %}
-          <li></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-    <ul class='sequence-canvas'>
-      {% for slide in page.slides %}
-        {% if forloop.index == 1 %}
-          {% assign class = "static" %}
-        {% else %}
-          {% assign class = '' %}
-        {% endif %}
+<section class="hero diagonal">
+	<div class="container">
+		<h2 class="editable">We Secure Your Startup</h2>
+		<p class="subtext editable">OAuth | OIDC | IAM Integrations for Technology Startups</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+	</div>
+</section>
 
-        <li class='frame {{class}}'>
-          <div class='bg' style='background-image: url({{slide.bg}});'></div>
-            <div class='title {{slide.title.animation}}' style='color: rgb(0, 0, 0);'>
-              <div class='row'>
-                <div class='{{slide.title.class}} columns'>
-                  <h2>{{slide.title.text}}</h2>
-                </div>
-              </div>
-            </div>
-          {% if slide.infos %}
-            {% for info in slide.infos %}
-              <div class='info{{forloop.index}} {{info.animation}}' style=''>
-                <div class='row'>
-                  <div class='medium-10 large-8 columns'>
-                    <p class='fa fa-check' style='color: #333;'>{{info.text}}</p>
-                    <div class='spacing'></div>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          {% endif %}
-          <div class='buttons-wrapper {{slide.buttons.animation}}' style=''>
-            <div class='row'>
-              <div class='{{slide.buttons.class}} columns'>
-                <div class='two spacing'></div>
-                {% for button in slide.buttons.items %}
-                  <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<div class='full'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <h4 style='color: #999'>About us</h4>
-      <h2>Rogue Identity</h2>
-      <div class='spacing'></div>
-      <p>Rogue Identity provides full-scale software development services. We're a small firm, heavy on experience. Our team of senior engineers has defined industry best practices in big data analytics, identity and security, and UX/UI. We're agile. We manage projects of all sizes, whether you need a few hours to work through an idea or a few years to design and implement an enterprise-wide program. Just let us know what you need. Chances are we've done it successfully before.</p>
-    </div>
-  </div>
-<div class='three spacing'></div>
-</div>
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Our Solutions</h3>
+			<!-- <p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p> -->
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View All Solutions &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 3 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container halves">
+		<!-- <div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;"></li>
+				<li><img src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png" width="300"></li>
+			</ul> 
+		</div>-->
+		<div>
+			<h3 class="editable">We Understand, Because We've Been There Too</h3>
+			<p class="editable">Your technology startup means the world to you, and you're looking for an OAuth/OIDC/IAM Integrations Consultant who will treat your project with the same care you would. I too have built my own SaaS startup and I know how challenging it can be to hire people who will give your project the same care and attention that you would yourself. Now I offer consulting services with a priority on getting your job done right, so you can continue to build your company without worry.</p>
+		</div>
+	</div>
+</section>
